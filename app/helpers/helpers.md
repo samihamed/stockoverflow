@@ -1,0 +1,1 @@
+Add a cookie (localStorage) way of saving recent news so reloads don't trigger the NewsAPI
