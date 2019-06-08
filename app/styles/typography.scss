@@ -1,3 +1,5 @@
+@import './color.scss';
+
 h1, h2, h3 {
     font-family: "Questrial", "Helvetica Neue";
 }
@@ -10,3 +12,22 @@ h1, h2, h3 {
 .title-heavy {
     font-weight: 800;
 }
+
+a {
+    background:
+       linear-gradient(
+         to bottom, $accent-light 0%,
+         $accent-light 100%
+       );
+      background-position: 0 100%;
+      background-repeat: repeat-x;
+      background-size: 4px 4px;
+    color: black;
+    padding: 1px;
+    text-decoration: none;
+    transition: background-size .5s;
+  }
+  
+  a:hover {
+    background-size: 4px 50px;
+  }

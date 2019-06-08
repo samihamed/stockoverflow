@@ -1,0 +1,34 @@
+@import '../../styles/typography.scss';
+
+.rainbow {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 10px;
+}
+
+.color {
+    height: 100%;
+    width: 20%;
+}
+
+.secondary {
+    background-color: $secondary;
+}
+
+.primary {
+    background-color: $primary;
+}
+
+.accent-dark {
+    background-color: $accent-dark;
+}
+
+.accent {
+    background-color: $accent-light;
+}
+
+.tertiary {
+    background-color: $tertiary;
+}
