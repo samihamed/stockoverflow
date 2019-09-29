@@ -1,33 +1,66 @@
 @import './color.scss';
 
 h1, h2, h3 {
-    font-family: "Questrial", "Helvetica Neue";
+  font-family: "Questrial", "Helvetica Neue";
 }
 
 .title-light {
-    font-weight: 100;
-    font-family: "Lato";
+  font-weight: 100;
+font-family: "Lato";
 }
 
 .title-heavy {
-    font-weight: 800;
+  font-weight: 800;
 }
 
 a {
+  background:
+      linear-gradient(
+        to bottom, $accent-light 0%,
+        $accent-light 100%
+      );
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 4px 4px;
+  color: black;
+  padding: 1px;
+  text-decoration: none;
+  transition: background-size .5s;
+
+  &.primary {
     background:
-       linear-gradient(
-         to bottom, $accent-light 0%,
-         $accent-light 100%
-       );
-      background-position: 0 100%;
-      background-repeat: repeat-x;
-      background-size: 4px 4px;
-    color: black;
-    padding: 1px;
-    text-decoration: none;
-    transition: background-size .5s;
+      linear-gradient(
+        to bottom, $primary 0%,
+        $primary-dark 100%
+      );
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 4px 4px;
   }
+
+  &.secondary {
+    background:
+      linear-gradient(
+        to bottom, $secondary 0%,
+        $secondary-dark 100%
+      );
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 4px 4px;
+  }
+
+  &.tertiary {
+    background:
+      linear-gradient(
+        to bottom, $tertiary 0%,
+        $tertiary-dark 100%
+      );
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 4px 4px;
+  }
+}
   
-  a:hover {
-    background-size: 4px 50px;
-  }
+a:hover {
+  background-size: 4px 50px;
+}

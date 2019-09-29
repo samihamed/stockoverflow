@@ -9,13 +9,32 @@ module.exports = {
     },
     module: {
         rules: [
-            { test: /\.(ts|tsx|js)$/, use: 'babel-loader' },
-            { test: /\.(css|scss)$/, use:[
-                'style-loader',
-                'css-loader',
-                'sass-loader'
-            ]},
-            { test: /\.(png|jpg|jpeg)$/, loader: 'url-loader?limit=true' }
+            {
+                test: /\.(ts|tsx|js)$/,
+                use: {
+                    loader: 'babel-loader',
+                    query: {
+                        plugins: [
+                            ["@babel/plugin-transform-runtime"],
+                        ],
+                    }
+                }
+            },
+            {
+                test: /\.(css|scss)$/,
+                use: [
+                    'style-loader',
+                    'css-loader',
+                    'sass-loader'
+                ]
+            },
+            {
+                test: /\.(png|jpg|jpeg|gif)$/,
+                loader: 'url-loader?limit=true' },
+            {
+                test: /\.svg$/,
+                loader: 'svg-inline-loader'
+            }
         ]
     },
     mode:'development',
