@@ -15,7 +15,7 @@ const App: React.FC = () => {
       
       <Logo/>
 
-      <div style={{width: "50%", minWidth: "300px", margin: "0 auto"}}>
+      <div style={{width: "30%", minWidth: "300px", margin: "0 auto"}}>
       
         <Card hasRainbow>
           <h1 style={{color: "#282c34"}}>welcome back 📈</h1>
