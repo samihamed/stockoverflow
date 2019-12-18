@@ -18,8 +18,8 @@
     "typescript": "^3.7.3"
   },
   "engines": {
-    "node": "~8.11.1",
-    "npm": "~6.9.0"
+    "node": "~13.4.0",
+    "npm": "~6.13.4"
   },
   "scripts": {
     "start": "react-scripts start",
