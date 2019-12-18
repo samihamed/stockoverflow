@@ -1,0 +1,22 @@
+.Button {
+    background-color: #49beaa;
+    padding: .5em 1em;
+    border: none;
+    border-radius: .25em;
+    margin: 1em 0;
+    font-weight: bolder;
+    outline: none;
+    cursor: pointer;
+    color: white;
+}
+
+.Button:hover {
+    background-color: #eeb868;
+    transition: background-color ease .5s;
+}
+
+.Button:active {
+    margin: 1.1em 1em .9em 1em;
+    background-color: #ef767a;
+    transition: background-color ease .5s;
+}

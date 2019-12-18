@@ -1,0 +1,19 @@
+.LogoContainer {
+    height: 155px;
+    margin: 1em;
+}
+
+.Logo {
+    height: 150px;
+    cursor: pointer;
+
+    &:hover {
+        height: 154px;
+        transition: height ease .15s;
+    }
+
+    &:active {
+        height: 145px;
+        transition: height ease .1s;
+    }
+}

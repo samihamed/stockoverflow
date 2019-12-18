@@ -1,0 +1,44 @@
+@import '../../styles/typography.scss';
+
+.rainbow {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    transition: height ease .3s;
+    cursor: pointer;
+}
+
+.stretch:hover {
+    height: 90px;
+}
+
+.stretch:active {
+    height: 70px;
+}
+
+.color {
+    height: 100%;
+    width: 20%;
+}
+
+.secondary {
+    background-color: $secondary;
+}
+
+.primary {
+    background-color: $primary;
+}
+
+.accent-dark {
+    background-color: $accent-dark;
+}
+
+.accent {
+    background-color: $accent-light;
+}
+
+.tertiary {
+    background-color: $tertiary;
+}
